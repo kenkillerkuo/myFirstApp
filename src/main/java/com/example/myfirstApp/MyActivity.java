@@ -6,7 +6,10 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.EditText;
 
-public class MyActivity extends Activity
+import android.support.v7.widget.Toolbar;
+import android.support.v7.app.AppCompatActivity;
+
+public class MyActivity extends AppCompatActivity
 {
 	public final static String EXTRA_MESSAGE = "com.example.myfirstApp.MESSAGE";
     /** Called when the activity is first created. */
@@ -15,6 +18,9 @@ public class MyActivity extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+		Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+		setSupportActionBar(myToolbar);
     }
 
 	/** Called when the user clicks the Send button */
