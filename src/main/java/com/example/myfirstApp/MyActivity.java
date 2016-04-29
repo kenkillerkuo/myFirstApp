@@ -12,6 +12,7 @@ import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.SearchView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBar;
 
 public class MyActivity extends AppCompatActivity
 {
@@ -22,9 +23,6 @@ public class MyActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
-		Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-		setSupportActionBar(myToolbar);
     }
 
 	@Override
@@ -47,6 +45,15 @@ public class MyActivity extends AppCompatActivity
 
 			intent.putExtra(EXTRA_MESSAGE, message);
 			startActivity(intent);
+	}
+
+	public void toggleActionBar(View view) {
+			final ActionBar actBar = getSupportActionBar();
+			if (actBar.isShowing()) {
+					actBar.hide();
+			} else {
+					actBar.show();
+			}
 	}
 
 	@Override

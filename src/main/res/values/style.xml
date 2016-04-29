@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+		<style name="myCustomStyle" parent="Theme.AppCompat.Light">
+				<item name="android:windowActionBarOverlay">true</item>
+				<item name="android:actionBarStyle">@style/myToolbarStyle</item>
+		</style>
+		<color name="transparent_black">#80000000</color>
 		<style name="myToolbarStyle" parent="Widget.AppCompat.ActionBar">
-				<item name="android:background">#00CCCC</item>
+				<item name="android:background">@color/transparent_black</item>
 		</style>
 </resources>

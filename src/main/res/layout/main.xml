@@ -4,7 +4,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-	<include layout="@layout/toolbar"/>
 <TextView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -20,6 +19,12 @@
 	android:layout_height = "wrap_content"
 	android:text = "@string/button_send"
 	android:onClick="sendMessage"
+	/>
+<Button
+	android:layout_width = "wrap_content"
+	android:layout_height = "wrap_content"
+	android:text = "@string/action_bar"
+	android:onClick="toggleActionBar"
 	/>
 </LinearLayout>
 

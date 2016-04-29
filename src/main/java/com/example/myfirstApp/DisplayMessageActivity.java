@@ -25,9 +25,6 @@ public class DisplayMessageActivity extends AppCompatActivity
 			textView.setTextSize(40);
 			textView.setText(message);
 
-			Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-			setSupportActionBar(myToolbar);
-
 			//Enable the Up Button
 			getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
