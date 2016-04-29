@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+		<style name="myToolbarStyle" parent="Widget.AppCompat.ActionBar">
+				<item name="android:background">#00CCCC</item>
+		</style>
+</resources>
